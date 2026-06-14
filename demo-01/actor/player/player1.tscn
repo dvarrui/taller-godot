@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://beyfedr1o3pfi"]
+
+[ext_resource type="Texture2D" uid="uid://26uugw5dk16c" path="res://assets/png/Players/Tilemap/tilemap_packed.png" id="1_1qx7d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1qx7d"]
+radius = 25.0
+
+[node name="player1" type="Area2D" unique_id=744135248]
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=761532870]
+position = Vector2(0, -12)
+scale = Vector2(3, 3)
+texture = ExtResource("1_1qx7d")
+region_enabled = true
+region_rect = Rect2(0, 0, 24, 24)
+
+[node name="shape" type="CollisionShape2D" parent="." unique_id=260995092]
+shape = SubResource("CircleShape2D_1qx7d")

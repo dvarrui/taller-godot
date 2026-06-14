@@ -1,2 +1,0 @@
-
-Creado con Godot 4.6.3
