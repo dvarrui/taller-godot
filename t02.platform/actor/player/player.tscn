@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bslilvto7451f"]
+
+[ext_resource type="Texture2D" uid="uid://cjno3ltp57yql" path="res://assets/monochrome_tilemap_transparent_packed.png" id="1_wy78e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wy78e"]
+size = Vector2(12, 14)
+
+[node name="player" type="CharacterBody2D" unique_id=1625735371]
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=215230826]
+texture = ExtResource("1_wy78e")
+region_enabled = true
+region_rect = Rect2(0, 208, 16, 16)
+
+[node name="shape" type="CollisionShape2D" parent="." unique_id=1895829660]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_wy78e")
