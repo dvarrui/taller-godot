@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ckhsqpyxxyqqw" path="res://actor/player/player.gd" id="1_7gqxp"]
 [ext_resource type="Texture2D" uid="uid://cjno3ltp57yql" path="res://assets/monochrome_tilemap_transparent_packed.png" id="1_wy78e"]
+[ext_resource type="AudioStream" uid="uid://ckmfst1ygfyr2" path="res://assets/sounds/jump-a.ogg" id="3_778ba"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7gqxp"]
 size = Vector2(12, 13)
@@ -121,3 +122,8 @@ sprite_frames = SubResource("SpriteFrames_ll7f1")
 animation = &"run"
 autoplay = "idle"
 frame_progress = 0.047751937
+
+[node name="sound" type="Node2D" parent="." unique_id=1812464041]
+
+[node name="jump" type="AudioStreamPlayer2D" parent="sound" unique_id=950552485]
+stream = ExtResource("3_778ba")
