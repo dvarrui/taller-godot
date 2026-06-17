@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bslilvto7451f"]
 
+[ext_resource type="Script" uid="uid://ckhsqpyxxyqqw" path="res://actor/player/player.gd" id="1_7gqxp"]
 [ext_resource type="Texture2D" uid="uid://cjno3ltp57yql" path="res://assets/monochrome_tilemap_transparent_packed.png" id="1_wy78e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wy78e"]
@@ -67,7 +68,7 @@ animations = [{
 "duration": 3.0,
 "texture": SubResource("AtlasTexture_wy78e")
 }, {
-"duration": 1.0,
+"duration": 0.7,
 "texture": SubResource("AtlasTexture_7gqxp")
 }],
 "loop": true,
@@ -109,6 +110,7 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D" unique_id=1625735371]
+script = ExtResource("1_7gqxp")
 
 [node name="shape" type="CollisionShape2D" parent="." unique_id=1895829660]
 position = Vector2(0, 1)
