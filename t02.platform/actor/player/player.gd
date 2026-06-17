@@ -34,9 +34,7 @@ func update_anim(direction):
 			state = "fall"
 	else:
 		state= "idle"
-		if direction > 0:
-			state = "run"
-		elif direction < 0:
+		if direction:
 			state = "run"
 
 	if direction > 0:
